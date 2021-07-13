@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trainning"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ShowUser"></activity>
+        <activity android:name=".ShowUser">
+
+        </activity>
         <activity android:name=".LoginMultilForm" />
         <activity android:name=".MainActivity">
             <intent-filter>

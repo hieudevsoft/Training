@@ -39,6 +39,7 @@ class ShowPostAdapter: RecyclerView.Adapter<ShowPostAdapter.MyViewHolder>() {
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.bind(data[position])
+
     }
 
     override fun getItemCount(): Int {

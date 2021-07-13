@@ -58,7 +58,7 @@ class LoginMultilForm : AppCompatActivity() {
             } else isPassOk = false
             binding.btnLogin.isEnabled = isPassOk && isUsernamePhoneOk
         }
-        binding.btnLogin.setOnClickListener {  }
+        binding.btnLogin.setOnClickListener { Intent(this,ShowUser::class.java).also { startActivity(it) } }
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {

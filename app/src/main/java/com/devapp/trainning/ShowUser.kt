@@ -7,9 +7,16 @@ import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
 import android.view.WindowManager
+import android.view.animation.OvershootInterpolator
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.devapp.trainning.databinding.ActivityShowUserBinding
+import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter
+import jp.wasabeef.recyclerview.adapters.ScaleInAnimationAdapter
+import jp.wasabeef.recyclerview.adapters.SlideInLeftAnimationAdapter
+import jp.wasabeef.recyclerview.animators.SlideInLeftAnimator
+import jp.wasabeef.recyclerview.animators.SlideInUpAnimator
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -24,8 +31,8 @@ class ShowUser : AppCompatActivity() {
         setContentView(binding.root)
         setFlagFullScreen()
         adapter = ShowPostAdapter()
-        binding.recycleView.layoutManager = GridLayoutManager(this,2,GridLayoutManager.VERTICAL,false)
-        binding.recycleView.adapter = adapter
+        binding.recycleView.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
+        binding.recycleView.adapter = SlideInLeftAnimationAdapter(AlphaInAnimationAdapter(ScaleInAnimationAdapter(adapter)))
         RetrofitInstance.getInstance().getApiService().getListPost().enqueue(object:Callback<List<Post>>{
             override fun onResponse(call: Call<List<Post>>, response: Response<List<Post>>) {
                 if(response.body()!=null){
