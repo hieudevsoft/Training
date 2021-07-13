@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trainning</string>
+    <string name="channel_name">Channel_1</string>
+    <string name="channel_description">Channel_1_des</string>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_login_button_enabled"
+        android:textAllCaps="false"
+        android:text="Click me"
+        android:id="@+id/btnCheck"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/rdGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:textColor="@color/orange"
+            android:id="@+id/rbbMale"
+            android:text="Male"
+            android:buttonTint="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:textColor="@color/orange"
+            android:id="@+id/rdFemale"
+            android:buttonTint="@color/orange"
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <CheckBox
+        android:buttonTint="@color/orange"
+        android:textColor="@color/orange"
+        android:id="@+id/cbCheckBox"
+        android:text="I'm Check Box"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:layout_marginBottom="10dp"
+        android:checked="true"
+        android:background="@drawable/custom_login_button_enabled"
+        style="@style/Widget.AppCompat.DrawerArrowToggle"
+        android:id="@+id/toggleButton"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_login_button_enabled"
+        android:textAllCaps="false"
+        android:text="Show Alert Dialog"
+        android:id="@+id/btnShowAlertDialog"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_login_button_enabled"
+        android:textAllCaps="false"
+        android:text="Show Date Picker Dialog"
+        android:id="@+id/btnShowDatePicker"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:padding="10dp"
+        android:id="@+id/btnShowTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_login_button_enabled"
+        android:text="Show Time Picker Dialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_login_button_enabled"
+        android:textAllCaps="false"
+        android:text="Show Notification"
+        android:id="@+id/btnShowNotification"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_login_button_enabled"
+        android:textAllCaps="false"
+        android:text="Remove Notification"
+        android:id="@+id/btnRemoveNotification"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_login_button_enabled"
+        android:textAllCaps="false"
+        android:text="Read Data"
+        android:id="@+id/btnReadData"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:padding="10dp"
+        android:background="@drawable/custom_login_button_enabled"
+        android:textAllCaps="false"
+        android:text="Mutil Screen"
+        android:id="@+id/btnMutilScreen"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
